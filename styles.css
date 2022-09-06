@@ -1,0 +1,155 @@
+:root {
+  /* Color */
+  --clr-black: #1c1c1c;
+  --clr-orange-hover: #d6881b;
+  --clr-orange: #ff9500;
+  --clr-grey: #505050;
+  --clr-white: #d4d4d2;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* General             */
+/* ------------------- */
+
+.calculator {
+  background-color: var(--clr-black);
+  width: fit-content;
+  padding: 1em;
+  border-radius: 5%;
+}
+
+.grid {
+  display: grid;
+  gap: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
+}
+
+button {
+  width: 35px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background: var(--clr-white);
+}
+
+.bg-black {
+  background-color: var(--clr-black);
+}
+
+.bg-grey {
+  background-color: var(--clr-grey);
+}
+
+.bg-orange {
+  background-color: var(--clr-orange);
+}
+
+.bg-white {
+  background-color: var(--clr-white);
+}
+/* ------------------- */
+/* Other             */
+/* ------------------- */
+
+.screen {
+  width: 150px;
+  height: 30px;
+  background-color: var(--clr-grey);
+  text-align: end;
+  border-radius: 5px;
+}
+
+.long-button {
+  width: 75px;
+}
+
+.high-button {
+  height: 65px;
+  margin-left: 3px;
+}
+
+button :hover {
+  background: var(--clr-orange-hover);
+  width: 100px;
+}
