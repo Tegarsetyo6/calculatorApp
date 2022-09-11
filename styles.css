@@ -90,6 +90,9 @@ select {
   width: fit-content;
   padding: 1em;
   border-radius: 5%;
+  position: absolute;
+  left: 300px;
+  top: 100px;
 }
 
 .grid {
@@ -149,7 +152,6 @@ button {
   margin-left: 3px;
 }
 
-button :hover {
-  background: var(--clr-orange-hover);
-  width: 100px;
+button:hover {
+  background-color: rgb(254, 254, 254);
 }

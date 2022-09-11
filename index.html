@@ -14,38 +14,42 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="calculator grid">
       <div class="screen"></div>
       <div class="button-row1">
-        <button class="bg-grey">C</button>
-        <button class="bg-orange">%</button>
-        <button class="bg-orange">/</button>
-        <button class="bg-orange">X</button>
+        <button id="clear" class="bg-grey all-clear">C</button>
+        <button id="%" class="bg-orange data-operation">%</button>
+        <button id="/" class="bg-orange data-operation">/</button>
+        <button id="x" class="bg-orange data-operation">X</button>
       </div>
       <div class="button-row2">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="bg-orange">-</button>
+        <button id="7" class="data-number">7</button>
+        <button id="8" class="data-number">8</button>
+        <button id="9" class="data-number">9</button>
+        <button id="-" class="bg-orange data-operation">-</button>
       </div>
       <div class="button-row3">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="bg-orange">+</button>
+        <button id="4" class="data-number">4</button>
+        <button id="5" class="data-number">5</button>
+        <button id="6" class="data-number">6</button>
+        <button id="+" class="bg-orange data-operation">+</button>
       </div>
       <div class="button-row4">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="bg-orange high-button absolute">=</button>
+        <button id="1" class="data-number">1</button>
+        <button id="2" class="data-number">2</button>
+        <button id="3" class="data-number">3</button>
+        <button id="=" class="bg-orange high-button absolute data-equals">=</button>
       </div>
       <div class="button-row5">
-        <button>0</button>
-        <button class="long-button">.</button>
+        <button id="0" class="data-number">0</button>
+        <button id="." class="long-button data-number">.</button>
       </div>
     </div>
+
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
