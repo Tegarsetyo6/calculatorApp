@@ -17,9 +17,12 @@
 
   <body>
     <div class="calculator grid">
-      <div class="screen"></div>
+      <div class="screen">
+        <div class="previous-operand">123+</div>
+        <div id="current-operand" class="current-operand">123</div>
+      </div>
       <div class="button-row1">
-        <button id="clear" class="bg-grey all-clear">C</button>
+        <button id="clear" class="bg-grey all-clear-button">AC</button>
         <button id="%" class="bg-orange data-operation">%</button>
         <button id="/" class="bg-orange data-operation">/</button>
         <button id="x" class="bg-orange data-operation">X</button>
@@ -44,12 +47,13 @@
       </div>
       <div class="button-row5">
         <button id="0" class="data-number">0</button>
-        <button id="." class="long-button data-number">.</button>
+        <button id="." class="data-number">.</button>
+        <button id="C" class="clear-button bg-orange">C</button>
       </div>
     </div>
 
     <!-- JS Script -->
     <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

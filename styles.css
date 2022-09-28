@@ -137,10 +137,16 @@ button {
 
 .screen {
   width: 150px;
-  height: 30px;
+  height: 50px;
   background-color: var(--clr-grey);
   text-align: end;
   border-radius: 5px;
+  color: white;
+}
+
+.previous-operand,
+.current-operand {
+  padding-right: 5px;
 }
 
 .long-button {
